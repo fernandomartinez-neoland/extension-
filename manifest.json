@@ -1,15 +1,33 @@
 {
   "manifest_version": 3,
-  "name": "React Style Picker Pro",
+  "name": "StyleInspector Pro",
   "version": "1.0.0",
+  "description": "Inspect and extract CSS styles from any web element with one click.",
+  "icons": {
+    "16": "icon16.svg",
+    "32": "icon32.svg",
+    "48": "icon48.svg",
+    "128": "icon128.svg"
+  },
   "action": {
-    "default_popup": "index.html"
+    "default_popup": "index.html",
+    "default_icon": {
+      "16": "icon16.svg",
+      "32": "icon32.svg",
+      "48": "icon48.svg",
+      "128": "icon128.svg"
+    }
   },
   "permissions": [
     "activeTab",
     "scripting",
-    "storage"
+    "storage",
+    "identity"
   ],
+  "oauth2": {
+    "client_id": "524618543185-qciciapmua6egtfllj83ucckuifu125l.apps.googleusercontent.com",
+    "scopes": ["https://www.googleapis.com/auth/userinfo.email"]
+  },
   "host_permissions": [
     "<all_urls>"
   ],
